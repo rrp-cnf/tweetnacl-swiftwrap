@@ -9,11 +9,12 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Bitmark Inc" => "support@bitmark.com" }
   s.social_media_url   = "https://twitter.com/bitmarkinc"
-  s.ios.deployment_target = "8.0"
+  s.swift_version = '5.0'
+  s.ios.deployment_target = "13.0"
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
   s.tvos.deployment_target = "9.0"
-  s.source       = { :git => "https://github.com/bitmark-inc/tweetnacl-swiftwrap.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/rrp-cnf/tweetnacl-swiftwrap.git", :tag => s.version }
   s.source_files  = "Sources/**/*.{h,c,swift}"
   s.private_header_files = 'Sources/CTweetNacl/include/*.h'
   s.preserve_paths = 'Sources/module.map'
